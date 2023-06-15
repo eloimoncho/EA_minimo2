@@ -50,6 +50,6 @@ export class MongoRatingsRepository implements RatingsRepository{
         if (result) {
           return result;
         }
-        return null;
+        return {};
     }
 }

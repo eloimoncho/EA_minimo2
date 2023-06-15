@@ -44,4 +44,25 @@
     background-color: #999;
   }
   
+  .star {
+    display: inline-block;
+    width: 20px; /* Ajusta el ancho según tus necesidades */
+    height: 20px; /* Ajusta la altura según tus necesidades */
+  }
   
+  .filled {
+    background-color: yellow; /* Cambia el color de fondo para las estrellas llenas */
+  }
+  
+  .empty {
+    background-color: gray; /* Cambia el color de fondo para las estrellas vacías */
+  }
+
+  .stars {
+    display: inline-flex;
+    gap: 1px;
+  }
+  
+  .star {
+    flex: 1;
+  }

@@ -11,7 +11,7 @@ const ratingsUseCase = new RatingsUseCase(ratingsRepo);
 const ratingsCtrl = new RatingsController(ratingsUseCase);
 
 // (GET) getAllRatings()
-routeRatings.get("/ratings/all",checkJwt,ratingsCtrl.getAllRatingsCtrl); // ¡Verificada!
+routeRatings.get("/rating/all",checkJwt,ratingsCtrl.getAllRatingsCtrl); // ¡Verificada!
 
 // (GET) getUsersWhoHaveRated(uuid: string)
 routeRatings.get("/rating/getraters/:uuid",checkJwt,ratingsCtrl.getUsersWhoHaveRatedCtrl); // ¡Verificada!
